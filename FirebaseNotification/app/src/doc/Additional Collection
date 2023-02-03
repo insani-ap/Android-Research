@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "6f2ad1a8-1ce5-47ed-95bb-4bcd9122791c",
+		"name": "FCM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FCM V1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "key=AAAAcd1vkt4:APA91bEfLe6yOIq15PQ4gY1L-W9yNIG1VoVef1Q5tortpKK4OBV7RoxMo-BnMc4tTX2QRGQrekGKnGtjOjWRN2O6d2KZyEVeZVFUFFfo_mZI2jJAEvfNwvDXVlz81syR6sr1XaWIg4GX",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"to\": \"e5WunxB5QYy_yBxcvkaU_N:APA91bHwFiHOnzKhXzS8mJmBjetjeIYbozNIB_s-LoWOi5j7zp-PFq0balTHht8sIpIpcHeZDSbLZZgLDPeGDoGuXH2IodsyoNyg4_9mzxT6109KxvwiASptNq9db6LK1mIVGVuIaDwu\",\r\n\t\"notification\": {\r\n\t\t\"title\": \"Example Push Notification!\",\r\n\t\t\"body\": \"What's up bro? You're fine? Here the Gift!\",\r\n        \"image\": \"https://thumbs.dreamstime.com/z/new-modern-frameless-smartphone-mockup-white-screen-isolated-background-black-blank-based-high-quality-studio-shot-design-99882006.jpg\",\r\n        \"sound\": \"default\",\r\n        \"tag\": \"gift\",\r\n        \"click_action\" : \"Notification\"\r\n\t},\r\n\t\"data\": {\r\n\t\t\"value\": \"Amazing!!! V1\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FCM V2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "key=AAAAcd1vkt4:APA91bEfLe6yOIq15PQ4gY1L-W9yNIG1VoVef1Q5tortpKK4OBV7RoxMo-BnMc4tTX2QRGQrekGKnGtjOjWRN2O6d2KZyEVeZVFUFFfo_mZI2jJAEvfNwvDXVlz81syR6sr1XaWIg4GX",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"to\": \"e5WunxB5QYy_yBxcvkaU_N:APA91bHwFiHOnzKhXzS8mJmBjetjeIYbozNIB_s-LoWOi5j7zp-PFq0balTHht8sIpIpcHeZDSbLZZgLDPeGDoGuXH2IodsyoNyg4_9mzxT6109KxvwiASptNq9db6LK1mIVGVuIaDwu\",\r\n\t\"data\": {\r\n\t\t\"value\": \"Amazing!!! V2\",\r\n        \"title\": \"Example Push Notification!\",\r\n\t\t\"body\": \"What's up bro? You're fine? Here the Gift!\",\r\n        \"tag\": 9,\r\n        \"image\" : \"https://thumbs.dreamstime.com/z/new-modern-frameless-smartphone-mockup-white-screen-isolated-background-black-blank-based-high-quality-studio-shot-design-99882006.jpg\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,13 @@
+https://firebase.google.com/docs/cloud-messaging
+https://firebase.google.com/docs/cloud-messaging/android/client
+
+https://firebase.google.com/docs/cloud-messaging/concept-options
+https://firebase.google.com/docs/cloud-messaging/http-server-ref
+https://firebase.google.com/docs/cloud-messaging/android/send-image
+https://firebase.google.com/docs/cloud-messaging/android/receive
+https://console.firebase.google.com/project/{nama project}/notification/compose
+
+https://developer.android.com/training/notify-user/build-notification#java
+
+https://stackoverflow.com/questions/40181654/firebase-fcm-open-activity-and-pass-data-on-notification-click-android
+https://stackoverflow.com/questions/37565599/firebase-cloud-messaging-fcm-launch-activity-when-user-clicks-the-notificati

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cLRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Sekai!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSubscribe"
+        android:layout_margin="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonUnsubscribe"
+        android:text="Subscribe" />
+
+    <Button
+        android:id="@+id/buttonUnsubscribe"
+        android:layout_margin="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvMain"
+        app:layout_constraintStart_toEndOf="@id/buttonSubscribe"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Unsubscribe" />
+
+    <Button
+        android:id="@+id/buttonGetToken"
+        android:layout_margin="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonSubscribe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Get Token" />
+
+    <LinearLayout
+        android:id="@+id/llVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="32dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonGetToken"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+        <RadioGroup
+            android:id="@+id/rgMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:checkedButton="@id/ver1"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/ver1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V1" />
+            <RadioButton
+                android:id="@+id/ver2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V2" />
+            <RadioButton
+                android:id="@+id/ver3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V3" />
+            <RadioButton
+                android:id="@+id/ver4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V4" />
+            <RadioButton
+                android:id="@+id/ver5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V5" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendPushNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/llVersion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Send Push Notification" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
