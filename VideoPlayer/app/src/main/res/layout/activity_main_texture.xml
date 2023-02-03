@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextureView
+            android:id="@+id/tvAdsExample"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/adsImage"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/adsImagePlay"
+            android:src="@drawable/play_button"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:tint="@color/white" />
+        <ImageView
+            android:id="@+id/adsImagePause"
+            android:src="@drawable/pause_button"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:tint="@color/white" />
+        <RelativeLayout style="@style/GenericProgressBackground"
+            android:visibility="gone"
+            android:id="@+id/loadingPanel" >
+            <ProgressBar style="@style/GenericProgressIndicator" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/adsImageFullScreen"
+            android:src="@drawable/fullscreen_button"
+            android:layout_gravity="end|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:tint="@color/white" />
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/RLMaster"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        android:layout_weight="2">
+        <TextView
+            android:id="@+id/tvVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</LinearLayout>

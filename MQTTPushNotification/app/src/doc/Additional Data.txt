@@ -1,0 +1,9 @@
+https://www.eclipse.org/paho/index.php?page=clients/android/index.php
+https://www.hivemq.com/blog/mqtt-client-library-enyclopedia-paho-android-service/
+https://github.com/eclipse/paho.mqtt.android
+https://developer.android.com/guide/components/services#java
+
+https://medium.com/swlh/android-and-mqtt-a-simple-guide-cb0cbba1931c
+https://stackoverflow.com/questions/60131694/getting-duplicate-class-error-when-adding-eclipse-paho-mqtt-dependencies-to-andr?noredirect=1&lq=1
+https://www.py4u.net/discuss/604809
+https://www.vultr.com/docs/how-to-install-mosquitto-mqtt-broker-server-on-ubuntu-16-04
